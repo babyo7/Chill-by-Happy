@@ -299,6 +299,7 @@ filter: blur(100%);
 
     #playlist{
         overflow: scroll;
+        
         height: 100%;
         width: 100%;
         padding-top: 20px;
@@ -326,6 +327,7 @@ filter: blur(100%);
         width: 300px;
         color: black;
         margin-bottom: 15px;
+       
         
     
     }
