@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="body">
+    <div id="loading">
+        <img id="gta"  src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExMXU4dTg0cmMxZndzMTZ1M25wNDk4Y2lqanBkZGQzNmpsaG0xdHg2ZSZlcD12MV9naWZzX3NlYXJjaCZjdD1z/XaejLonqk19jDugJbq/200.gif" />
+    </div>
+ 
+    
+  
+
+    <div class="box" style="visibility: hidden;" id="box">
+        <div id="playlists" class="pp" style="display: none;">
+            <button id="babez">Baby Music - By Baby</button>
+            <button id="Happy">Ridezzz - By Happy</button>
+            <button id="mgmt">MGMT - Little Dark Age - by Happy</button>
+            <button id="Github">View Code - Github</button>
+            <button id="close">Close</button>
+    
+        </div>
+        
+       
+        <nav id="nav" class="mov">
+            <div class="outer">
+        <div class="circle shine" id="circle">       
+        </div>
+        </div>
+        <div class="heading">
+     <h1 id="Baby">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chill❤️&nbsp;&nbsp;&nbsp;</h1>
+     </div>
+     <div class="right-outer">
+        <div class="right-circle" id="shareBtn">       
+        </div>
+        </div>
+        
+
+     </nav>
+
+     <div class="music shine" id="mus" style="visibility: hidden;" >
+        <div id="playlist" class="p"  style="visibility: hidden;">
+            <button id="blank"onclick="nxt=0,songs()" >Blank Space - Taylor Swift</button>
+            <button id="wild" onclick="nxt=1,songs()">Wildest Dreams - Taylor Swift</button>
+            <button id="look" onclick="nxt=2,songs()">Look What You Made Me Do - Taylor Swift</button>
+            <button id="haze" onclick="nxt=3,songs()">Lavender Haze - Taylor Swift</button>
+            <button id="hero" onclick="nxt=4,songs()">Anti-Hero - Taylor Swift</button>
+            <button id="gray" onclick="nxt=5,songs()">Maniac - Conan Gray</button>
+            <button id="people" onclick="nxt=6,songs()">People Watching - Conan Gray</button>
+            <button id="over" onclick="nxt=7,songs()">Overdrive - Conan Gray</button>
+            <button id="night" onclick="nxt=8,songs()">Night Changes - One Direction</button>
+            <button id="what" onclick="nxt=9,songs()">What Makes You Beautiful - One Direction</button>
+            <button id="steal" onclick="nxt=10,songs()">Steal My Girl - One Direction</button>
+            <button id="story"onclick="nxt=11,songs()">Story of My Life -One Direction</button>
+            <button id="drag"onclick="nxt=12,songs()">Drag Me Down - One Direction</button>
+            <button id="you"onclick="nxt=13,songs()">You & I - One Direction</button>
+            <button id="star"onclick="nxt=14,songs()">Starboy - The Weeknd</button>
+            <button id="blin"onclick="nxt=15,songs()">Blinding Lights - The Weeknd</button>
+            <button id="save"onclick="nxt=16,songs(),">Save Your - The Weeknd</button>
+            <button id="lig"onclick="nxt=17,songs()">Light Switch - Charlie Puth</button>
+            <button id="ever"onclick="nxt=18,songs()">Everyday Normal Guy 2 - Pancadão Transa Som</button>
+            <button id="straw"onclick="nxt=19,songs()">Strawberries & Cigarettes -Troye Sivan</button>
+            <button id="want"onclick="nxt=10,songs()">Everybody Wants to Rule the World - Tears for Fears</button>
+            <button id="good"onclick="nxt=21,songs()">good 4 u - Olivia Rodrigo</button>
+            <button id="danza"onclick="nxt=22,songs()">Danza Kuduro - Don Omar</button>
+            <button id="water"onclick="nxt=23,songs()">Watermelon Sugar - Harry Styles</button>
+            <button id="need"onclick="nxt=24,songs()">You Need To Calm Down - Taylor Swift</button>
+            <button id="man"onclick="nxt=25,songs()">A Man Without Love - Engelbert Humperdinck</button>
+            <button id="wish"onclick="nxt=26,songs()">Wish You Were Sober - Conan Gray</button>
+            <button id="rem"onclick="nxt=27,songs()">Reminder - The Weeknd</button>
+            <button id="ggst"onclick="nxt=28,songs()">Charlie Be Quiet! - Charlie Puth</button>
+            <button id="char"onclick="nxt=29,songs()">Light Switch - Charlie Puth</button>
+            <button id="that" onclick="nxt=30,songs()">That's Hilarious - Charlie Puth</button>
+            <button id="call" onclick="nxt=31,songs()">Call Out My Name - The Weeknd</button>
+            <button id="die" onclick="nxt=32,songs(),console.log(nxt)">Die For You - The Weeknd</button>
+            <button id="taylor" onclick="nxt=33,songs()">Style - Taylor Swift</button>
+            <button id="the" onclick="nxt=34,songs()">Riptide - The Chainsmokers</button>
+            <button id="love" onclick="nxt=35,songs()">Self Love - Metro Boomin & Coi Leray</button>
+            <button id="just" onclick="nxt=36,songs()">Just the Two of Us - Grover Washington</button>
+            <button id="closer" onclick="nxt=37,songs()">Closer - The Chainsmokers</button>
+            
+            <button id="space" style="visibility: hidden; height: 17px;">Haryana Hood - Irshad Khan</button>
+        </div>
+        
+   
+     </div>
+     <div id="hide">
+        <div class="get">
+     <h2 id="name">Blank Space </h2>
+    </div>
+     <p id="artist">Taylor Swift</p>
+     </div>
+     <input id="progress" type="range" value="0">  
+    <audio  id="myAudio">
+    <source src="Music/0.mp3" type="audio/mp3">
+  </audio>
+     <div class="control" style="visibility: hidden;" id="control">
+     <button id="btn1"  style="font-size: 10px;" class="fa-solid fa-angle-left" onclick="prv()"></button>
+    
+     <button id="btn2"  onclick="playAudio()" class="fa-solid fa-play"></button>
+    
+     <button id="btn3"  style="font-size: 10px;" class="fa-solid fa-angle-right" onclick="tests()"></button>
+    
+    </div>
+
+    </div>
+   
+   
+   <script>
+        
+window.onload = () => kill();
+
+
+
+function kill(){
+
+    document.getElementById("mus").classList.remove("shine");
+    document.getElementById("circle").classList.remove("shine");
+}
+
+document.getElementById("circle").onclick = () => window.location.href="https://github.com/babyo7/Music-Player";
+      
+        var cnt = 0;
+        var nxt = 0;
+
+        var prev = 0;
+        
+
+        var t =  document.getElementById("test");
+       
+        var x = document.getElementById("myAudio"); 
+        var y = document.getElementById("btn2");
+        var z =  document.getElementById("progress");
+        var m =  document.getElementById("mus");
+        var ns = document.getElementById("btn3");
+        var mgmt = document.getElementById("mgmt");
+        var babezz = document.getElementById("babez");
+
+        var n =  document.getElementById("name");
+        var a =  document.getElementById("artist");
+        var p=  document.getElementById("playlist");
+        var pp=  document.getElementById("playlists");
+     
+        var baby=  document.getElementById("Baby");
+        var hide=  document.getElementById("hide");
+        var happy=  document.getElementById("Happy");
+        var github=  document.getElementById("Github");
+
+
+
+        
+              
+       
+       
+       
+
+        mgmt.onclick =() => window.open("https://mgmt-by-happy.vercel.app");
+        babezz.onclick =() => window.open("https://music-player-sable-sigma.vercel.app");
+
+        github.onclick = () =>  window.open("https://github.com/babyo7/mgmt-by-happy");
+        var mobile = window.matchMedia("(max-width: 800px)")
+myFunction(mobile) // Call listener function at run time
+mobile.addListener(myFunction) // Attach listener function on state changes 
+
+
+happy.onclick = ()=> window.open("https://happy-music.vercel.app");
+
+        const myTimeout = setTimeout(wassup, 1100);
+        const time = setTimeout(shows, 1100);
+       
+        function wassup() {
+    document.getElementById("loading").style.display="none";
+    document.getElementById("box").style.visibility="visible";
+    document.getElementById("mus").style.visibility="visible";
+    document.getElementById("control").style.visibility="visible";
+    
+
+}
+
+
+        users=0;
+        baby.onclick = ()=>{
+            users++;
+            user();
+            console.log(users);
+        }
+
+        function user(){
+
+switch(users){
+
+        case 1:
+        pp.classList.remove("downs");
+       pp.classList.add("slide");
+       pp.style.display="block";
+     
+       
+       document.getElementById("nav").classList.remove("mov");
+       document.getElementById("nav").classList.add("slide");
+       
+       document.getElementById("nav").style.marginBottom="-1400px";
+       
+    
+
+  
+    a.style.visibility="hidden";
+    n.style.visibility="hidden";
+    z.style.visibility="hidden";
+    break;
+default:
+    users=0;
+
+}
+        }
+
+document.getElementById("close").onclick =()=> {show(); }
+
+function show() {
+    if( /android|iphone/i.test(navigator.userAgent)){
+        myFunction(mobile);
+    }
+    else{
+
+    pp.classList.remove("slide");
+    pp.classList.add("downs");
+    document.getElementById("nav").style.marginBottom="";
+    document.getElementById("nav").style.marginTop="-1300px";
+
+    document.getElementById("mus").style.visibility="visible";
+    document.getElementById("control").style.visibility="visible";
+    document.getElementById("nav").style.visibility="visible";
+    a.style.visibility="visible";
+    n.style.visibility="visible";
+    z.style.visibility="visible";
+
+
+    setTimeout(shows, 1600);
+    }
+
+}
+       
+function shows(){
+    document.getElementById("nav").style.marginBottom="";
+    document.getElementById("nav").style.marginTop="";
+pp.style.display="none";
+    users=0;
+   
+      
+}
+
+
+function myFunction(mobile) {
+
+pp.classList.remove("slide");
+pp.classList.add("downs");
+document.getElementById("nav").style.marginBottom="";
+document.getElementById("nav").style.marginTop="-1190px";
+
+document.getElementById("mus").style.visibility="visible";
+document.getElementById("control").style.visibility="visible";
+document.getElementById("nav").style.visibility="visible";
+a.style.visibility="visible";
+n.style.visibility="visible";
+z.style.visibility="visible";
+
+
+setTimeout(shows, 1900);
+
+}
+
+
+
+
+
+
+function tests(){
+    nxt++;
+    songs();
+    
+console.log(nxt);
+    
+
+}
+
+function  prv(){
+    nxt--;
+    songs();
+    
+console.log(nxt);
+
+
+}
+
+
+
+function songs(){
+
+
+switch(nxt)
+{
+
+
+    case 1:
+
+    x.setAttribute('src','Music/1.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/1.jpg)";
+            n.innerText="Wildest Dreams";
+            a.innerText="Taylor Swift";
+            document.title="Wildest Dreams - Taylor Swift";
+
+    
+        break;
+
+        case 2:
+        x.setAttribute('src','Music/2.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/2.jpg)";
+            n.innerText="Look What You Made Me Do";
+            a.innerText="Taylor Swift";
+            document.title="Look What You Made Me Do - Taylor Swift";
+
+         break;
+         case 3:
+         x.setAttribute('src','Music/3.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/3.jpg)";
+            n.innerText="Lavender Haze";
+            a.innerText="Taylor Swift";
+            document.title="Lavender Haze - Taylor Swift";
+
+            break;
+            case 4:
+                   x.setAttribute('src','Music/4.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/4.jpg)";
+            n.innerText="Anti-Hero";
+            a.innerText="Taylor Swift";
+            document.title="Anti-Hero - Taylor Swift";
+            break;
+            case 5:
+            x.setAttribute('src','Music/5.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/5.jpg)";
+            n.innerText="Maniac";
+            a.innerText="Conan Gray";
+            document.title="Maniac - Conan Gray";
+            break;
+
+            case 6:
+            x.setAttribute('src','Music/6.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/6.jpg)";
+            n.innerText="People Watching";
+            a.innerText="Conan Gray";
+            document.title="People Watching - Conan Gray";
+            break;
+
+            case 7:
+            x.setAttribute('src','Music/7.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/7.jpg)";
+            n.innerText="Overdrive";
+            a.innerText="Conan Gray";
+            document.title="Overdrive - Conan Gray";
+            break;
+
+            case 8:
+            x.setAttribute('src','Music/8.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/8.jpg)";
+            n.innerText="Night Changes ";
+            a.innerText="One Direction";
+            document.title="Night Changes - One Direction";
+            break;
+
+            case 9:
+            x.setAttribute('src','Music/9.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/9.jpg)";
+            n.innerText="What Makes You Beautiful";
+            a.innerText="One Direction";
+            document.title="What Makes You Beautiful - One Direction";
+            break;
+
+            case 10:
+            x.setAttribute('src','Music/10.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/10.jpg)";
+            n.innerText="Steal My Girl ";
+            a.innerText="One Direction";
+            document.title="Steal My Girl - One Direction";
+            break;
+
+            case 11:
+            x.setAttribute('src','Music/11.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/11.jpg)";
+            n.innerText="Story of My Life ";
+            a.innerText="One Direction";
+            document.title="Story of My Life - One Direction";
+            break;
+
+            case 12:
+            x.setAttribute('src','Music/12.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/12.jpg)";
+            n.innerText="Drag Me Down ";
+            a.innerText="One Direction";
+            document.title="Drag Me Down - One Direction";
+            break;
+
+            case 13:
+            x.setAttribute('src','Music/13.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/13.jpg)";
+            n.innerText="You & I ";
+            a.innerText="One Direction";
+            document.title="You & I - One Direction";
+            break;
+
+            case 14:
+            x.setAttribute('src','Music/14.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/14.jpg)";
+            n.innerText="Starboy (feat. Daft Punk)";
+            a.innerText="The Weeknd";
+            document.title="Starboy (feat. Daft Punk) - The Weeknd";
+            break;
+
+            case 15:
+            x.setAttribute('src','Music/15.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/15.jpg)";
+            n.innerText="Blinding Lights";
+            a.innerText="The Weeknd";
+            document.title="Blinding Lights - The Weeknd";
+            break;
+
+            case 16:
+            x.setAttribute('src','Music/16.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/16.jpg)";
+            n.innerText="Save Your Tears (Remix) ";
+            a.innerText="The Weeknd";
+            document.title="Save Your Tears (Remix) - The Weeknd & Ariana Grande";
+            break;
+
+        
+
+            case 17:
+            x.setAttribute('src','Music/17.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/17.jpg)";
+            n.innerText="Light Switch";
+            a.innerText="Charlie Puth";
+            document.title="Light Switch - Charlie Puth";
+            break;
+
+            case 18:
+            x.setAttribute('src','Music/18.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/18.jpg)";
+            n.innerText="Everyday Normal Guy 2";
+            a.innerText="Pancadão Transa Som";
+            document.title="Everyday Normal Guy 2 - Pancadão Transa Som";
+            break;
+
+            case 19:
+            x.setAttribute('src','Music/19.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/19.jpg)";
+            n.innerText="Strawberries & Cigarettes ";
+            a.innerText=" Troye Sivan";
+            document.title="Strawberries & Cigarettes - Troye Sivan";
+            break;
+
+            case 20:
+            x.setAttribute('src','Music/20.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/20.jpg)";
+            n.innerText="Everybody Wants to Rule";
+            a.innerText="Tears for Fears";
+            document.title="Everybody Wants to Rule the World - Tears for Fears";
+            break;
+
+
+               case 21:
+               x.setAttribute('src','Music/21.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/21.jpg)";
+            n.innerText="good 4 u ";
+            a.innerText="Olivia Rodrigo";
+            document.title="good 4 u - Olivia Rodrigo";
+            break;
+
+            case 22:
+            x.setAttribute('src','Music/22.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/22.jpg)";
+            n.innerText="Danza Kuduro";
+            a.innerText="Don Omar";
+            document.title="Danza Kuduro (feat. Lucenzo) - Don Omar";
+            break;
+
+            case 23:
+            x.setAttribute('src','Music/23.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/23.jpg)";
+            n.innerText="Watermelon Sugar";
+            a.innerText="Harry Styles";
+            document.title="Watermelon Sugar - Harry Styles";
+            break;
+
+            case 24:
+            x.setAttribute('src','Music/24.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/24.jpg)";
+            n.innerText="You Need To Calm Down";
+            a.innerText="Taylor Swift";
+            document.title="You Need To Calm Down - Taylor Swift";
+            break;
+
+            case 25:
+            x.setAttribute('src','Music/25.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/25.jpg)";
+            n.innerText="A Man Without Love ";
+            a.innerText="Engelbert Humperdinck";
+            document.title="A Man Without Love - Engelbert Humperdinck";
+            break;
+            case 26:
+            x.setAttribute('src','Music/26.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/26.jpg)";
+            n.innerText="Wish You Were Sober ";
+            a.innerText="Conan Gray";
+            document.title="Wish You Were Sober - Conan Gray";
+            break;
+            case 27:
+            x.setAttribute('src','Music/27.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/27.jpg)";
+            n.innerText="Reminder ";
+            a.innerText="The Weeknd";
+            document.title="Reminder - The Weeknd";
+            break;
+
+            case 28:
+            x.setAttribute('src','Music/28.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/28.jpg)";
+            n.innerText="Charlie Be Quiet!";
+            a.innerText="Charlie Puth";
+            document.title="Charlie Be Quiet! - Charlie Puth";
+            break;
+
+            case 29:
+            x.setAttribute('src','Music/29.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/29.jpg)";
+            n.innerText="Light Switch ";
+            a.innerText="Charlie Puth";
+            document.title="Light Switch - Charlie Puth";
+            break;
+
+            case 30:
+            x.setAttribute('src','Music/30.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/30.jpg)";
+            n.innerText="That's Hilarious ";
+            a.innerText="Charlie Puth";
+            document.title="That's Hilarious - Charlie Puth";
+            break;
+
+               case 31:
+               x.setAttribute('src','Music/31.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/31.jpg)";
+            n.innerText="Call Out My Name";
+            a.innerText="The Weeknd";
+            document.title="Call Out My Name - The Weeknd";
+            break;
+
+            case 32:
+            x.setAttribute('src','Music/32.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/32.jpg)";
+            n.innerText="Die For You ";
+            a.innerText="The Weeknd";
+            document.title="Die For You - The Weeknd";
+            break;
+
+               case 33:
+               x.setAttribute('src','Music/33.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/33.jpg)";
+            n.innerText="Style ";
+            a.innerText="Taylor Swift";
+            document.title="Style - Taylor Swift";
+            break;
+
+            case 34:
+            x.setAttribute('src','Music/34.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/34.jpg)";
+            n.innerText="Riptide -";
+            a.innerText="The Chainsmokers";
+            document.title="Riptide - The Chainsmokers";
+            break;
+
+            case 35:
+            x.setAttribute('src','Music/35.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/35.jpg)";
+            n.innerText="Self Love";
+            a.innerText="Metro Boomin & Coi Leray";
+            document.title="Self Love - Metro Boomin & Coi Leray";
+            break;
+            case 36:
+            x.setAttribute('src','Music/36.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/36.jpg)";
+            n.innerText="Just the Two of Us";
+            a.innerText="Grover Washington, Jr.";
+            document.title="Just the Two of Us - Grover Washington, Jr.";
+            break;
+
+
+            case 37:
+            x.setAttribute('src','Music/37.mp3');
+    x.play();
+                y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/37.jpg)";
+            n.innerText="Closer ";
+            a.innerText="The Chainsmokers";
+            document.title="Closer (feat. Halsey) - The Chainsmokers";
+            break;
+
+
+
+            
+            default:    
+            x.setAttribute('src','Music/0.mp3');
+           x.play();
+           y.className="fa-solid fa-pause";
+            m.style.backgroundImage = "url(Cover/0.jpg)";
+            n.innerText="Blank Space";
+            a.innerText="Taylor Swift";
+           nxt=0;
+           document.title="Blank Space - Taylor Swift";
+               
+
+                
+}
+}
+
+
+function playAudio(){
+    cnt++;
+playaudio();
+console.log(cnt);
+}
+
+
+
+        function playaudio() { 
+
+
+            switch(cnt){
+
+            case 1:
+          
+            x.play(); 
+            y.className="fa-solid fa-pause";
+            break;
+
+            default:
+                cnt=0;
+            x.pause();
+            
+            y.className="fa-solid fa-play";
+
+
+          
+            }
+            
+           
+        }
+        
+        function sec() {
+            x.currentTime -= 30
+        }
+
+        function secd() {
+            x.currentTime += 30
+        }
+
+       
+
+z.max  = x.duration;        // Set max value when you know the duration
+x.onloadedmetadata = () => z.max = x.duration;
+// update audio position
+x.onchange = () => z.currentTime = x.value;
+// update range input when currentTime updates
+x.ontimeupdate = () => z.value = x.currentTime;
+
+m.onclick =() => rste();
+hide.onclick =() => rst();
+
+function rst(){
+    p.classList.remove("slide");
+    p.classList.add("down");
+    
+}
+
+function rste(){
+    
+    p.style.visibility="visible";
+    p.classList.remove("down");
+    p.classList.add("slide");
+}
+
+
+function hiddee(){
+
+    p.style.visibility="none";
+}
+
+z.onchange = () => x.currentTime = z.value;
+x.onended = () => ns.click();
+x.onpause = () =>   y.className="fa-solid fa-play";
+x.onplay= () =>   y.className="fa-solid fa-pause";
+
+
+
+
+
+
+
+        
+
+
+const shareBtn = document.getElementById('shareBtn')
+
+shareBtn.addEventListener('click', event => {
+
+  // Check for Web Share api support
+  if (navigator.share) {
+    // Browser supports native share api
+    navigator.share({
+      title: ' ',
+      url: 'https://mgmt-by-happy.vercel.app'
+    }).then(() => {
+      console.log('Thanks for sharing!');
+    })
+      .catch((err) => console.error(err));
+  } else {
+    // Fallback
+    alert("The current browser does not support the share function. Please, manually share the link")
+  }
+});
+
+
+    </script>
+
+</body>
+</html>
