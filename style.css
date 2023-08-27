@@ -336,7 +336,7 @@ filter: blur(100%);
         background-color: white;
     }
 
-
+ 
 
     @media screen and (max-width: 1000px) {
         
@@ -366,6 +366,7 @@ filter: blur(100%);
             margin-bottom: 30px;
           width: 350px; 
           height: 600px;
+         
          
         
     
