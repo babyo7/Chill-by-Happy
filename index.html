@@ -775,14 +775,31 @@ x.onpause = () =>   y.className="fa-solid fa-play";
 x.onplay= () =>   y.className="fa-solid fa-pause";
 
 
-
+var dark=0
 document.getElementById("body").ondblclick=()=>{
-     body.style.backgroundColor="black"
+    dark++
+darke();
+console.log(dark)   
 }
 
 
+function darke(){
+    switch(dark){
+ case 1:
+ 
+     body.style.backgroundColor="black"
 
-        
+     
+  break;
+
+  default:
+  dark=0
+  body.style.backgroundColor="white"
+  
+
+}
+}
+
 
 
 const shareBtn = document.getElementById('shareBtn')
