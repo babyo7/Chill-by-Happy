@@ -91,6 +91,7 @@ body::-webkit-scrollbar{
     text-align: center;
     background-position: center;
     background-size: cover;
+    
    
     background-image: url(Cover/0.jpg);
     overflow: hidden;
