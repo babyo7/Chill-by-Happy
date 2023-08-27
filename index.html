@@ -281,7 +281,15 @@ setTimeout(shows, 1900);
 
 
 function tests(){
-    p.scrollIntoView(30);
+    
+
+        if(p.scrollTop==1824){
+            p.scrollTop -= 1850;
+        }
+        else{
+            p.scrollTop +=50;
+        console.log(p.scrollTop);
+        }
     nxt++;
    
     songs();
