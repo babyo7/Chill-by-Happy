@@ -315,7 +315,7 @@ filter: blur(100%);
     #playlist button{
        padding-left: 30px;
        padding-right: 30px;
-     overflow: scroll;
+     overflow: hidden;
        white-space: nowrap;
         text-overflow: ellipsis;
         border-radius: 10px;
