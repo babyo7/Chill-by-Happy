@@ -30,8 +30,7 @@
        
         <nav id="nav" class="mov">
             <div class="outer">
-        <div class="circle shine" id="circle">  
-            <img  class="gta shine" src="dp.webp"  >     
+        <div class="circle shine" id="circle">       
         </div>
         </div>
         <div class="heading">
@@ -46,11 +45,7 @@
      </nav>
 
      <div class="music shine" id="mus" style="visibility: hidden;" >
-      
-            <img id="kover" class="nor" src="Cover/0.jpg">
-     
         <div id="playlist" class="p"  style="visibility: hidden;">
-            
             <button id="blank"onclick="nxt=0,songs()" >Blank Space - Taylor Swift</button>
             <button id="wild" onclick="nxt=1,songs()">Wildest Dreams - Taylor Swift</button>
             <button id="look" onclick="nxt=2,songs()">Look What You Made Me Do - Taylor Swift</button>
@@ -91,11 +86,9 @@
             <button id="closer" onclick="nxt=37,songs()">Closer - The Chainsmokers</button>
             
             <button id="space" style="visibility: hidden; height: 17px;">Haryana Hood - Irshad Khan</button>
-       
         </div>
         
-        
-        
+   
      </div>
      <div id="hide">
        
@@ -131,8 +124,6 @@ function kill(){
     document.getElementById("circle").classList.remove("shine");
 }
 
-
-
 document.getElementById("circle").onclick = () => window.location.href="https://github.com/babyo7/Music-Player";
       
         var cnt = 0;
@@ -146,8 +137,7 @@ document.getElementById("circle").onclick = () => window.location.href="https://
         var x = document.getElementById("myAudio"); 
         var y = document.getElementById("btn2");
         var z =  document.getElementById("progress");
-        var m =  document.getElementById("kover");
-        var coverr =  document.getElementById("mus");
+        var m =  document.getElementById("mus");
         var ns = document.getElementById("btn3");
         var mgmt = document.getElementById("mgmt");
         var babezz = document.getElementById("babez");
@@ -162,6 +152,11 @@ document.getElementById("circle").onclick = () => window.location.href="https://
         var happy=  document.getElementById("Happy");
         var github=  document.getElementById("Github");
 
+
+
+        
+              
+       
        
        
 
@@ -306,7 +301,6 @@ console.log(nxt);
 }
 
 function  prv(){
-    p.scrollTop -=50;
     nxt--;
     songs();
    
@@ -1255,13 +1249,11 @@ x.onchange = () => z.currentTime = x.value;
 x.ontimeupdate = () => z.value = x.currentTime;
 
 m.onclick =() => rste();
-coverr.onclick =() => rste();
 hide.onclick =() => rst();
 
 function rst(){
     p.classList.remove("slide");
     p.classList.add("down");
-
     
 }
 
@@ -1270,10 +1262,7 @@ function rste(){
     p.style.visibility="visible";
     p.classList.remove("down");
     p.classList.add("slide");
-    console.log("hello")
-    m.style.display="none";
 }
-
 
 
 function hiddee(){
