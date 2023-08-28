@@ -8,6 +8,23 @@
 
 }
 
+#circle img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   object-position: center;
+}
+
+#mus img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+   object-position: center;
+   
+}
+
+
+
 body{
 
     background-color: antiquewhite;
@@ -82,18 +99,16 @@ body::-webkit-scrollbar{
 }
 
 .music{
-    
+
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 350px;
     width: 340px;
     margin: auto;
     border-radius: 30px;
     text-align: center;
-    background-position: center;
-    background-size: cover;
-    
-   
-    background-image: url(Cover/0.jpg);
+ background-position: center;
+ background-size: cover;
+ background-image: url(Cover/0.jpg);
     overflow: hidden;
     
 
@@ -222,6 +237,7 @@ nav{
 
 }
 
+
 .circle{
     border-radius: 50%;
     background-color: bisque;
@@ -231,10 +247,10 @@ nav{
     height: 47px;
     width: 47px;
     margin-bottom: -10px;
-    background-position: center;
-    background-size: cover;
-    background-image: url(dp.webp);
+   
     cursor: pointer;
+    overflow: hidden;
+
   
 }
 h1{
@@ -299,7 +315,7 @@ filter: blur(100%);
 
     #playlist{
         overflow: scroll;
-        
+       position: relative;
         height: 100%;
         width: 100%;
         padding-top: 20px;
