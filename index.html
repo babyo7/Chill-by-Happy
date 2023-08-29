@@ -222,9 +222,8 @@ switch(users){
        
        document.getElementById("nav").style.marginBottom="-1400px";
 
-        
+        document.getElementById("userid").style.visibility="hidden";
        
-    document.getElementById("userid").style.visibility="hidden";
 
   
     a.style.visibility="hidden";
@@ -257,7 +256,7 @@ function show() {
     n.style.visibility="visible";
     z.style.visibility="visible";
 
-
+    document.getElementById("userid").style.visibility="visible";
     setTimeout(shows, 1600);
     }
 
@@ -267,7 +266,7 @@ function shows(){
     document.getElementById("nav").style.marginBottom="";
     document.getElementById("nav").style.marginTop="";
 pp.style.display="none";
-document.getElementById("userid").style.visibility="hidden";
+
     users=0;
    
       
@@ -320,6 +319,7 @@ a.style.visibility="visible";
 n.style.visibility="visible";
 z.style.visibility="visible";
 document.getElementById("userid").style.visibility="visible";
+
 
 setTimeout(shows, 1900);
 
