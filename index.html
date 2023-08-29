@@ -157,14 +157,7 @@ document.getElementById("circle").onclick = () => window.location.href="https://
         var github=  document.getElementById("Github");
 
 
-navigator.mediaSession.setActionHandler("play", () => {
-    /* Code excerpted. */
-x.play()
-  });
-  navigator.mediaSession.setActionHandler("pause", () => {
-    /* Code excerpted. */
-x.pause()
-  });
+
         
               
        
@@ -276,6 +269,27 @@ navigator.mediaSession.setActionHandler('nexttrack', () => {
     tests();
     // Whatever you need to do to play the next track.
 });
+
+       
+navigator.mediaSession.setActionHandler('seekbackward', () => {
+    /* Code excerpted. */
+sec();
+  });
+  navigator.mediaSession.setActionHandler('seekforward', () => {
+    /* Code excerpted. */
+secd();
+  });
+
+navigator.mediaSession.setActionHandler('play', () => {
+    /* Code excerpted. */
+x.play()
+  });
+  navigator.mediaSession.setActionHandler('pause', () => {
+    /* Code excerpted. */
+x.pause()
+  });
+
+
 
 
 function myFunction(mobile) {
@@ -1259,16 +1273,6 @@ console.log(cnt);
         function secd() {
             x.currentTime += 30
         }
-
-       
-navigator.mediaSession.setActionHandler("seekbackward", () => {
-    /* Code excerpted. */
-sec();
-  });
-  navigator.mediaSession.setActionHandler("seekforward", () => {
-    /* Code excerpted. */
-secd();
-  });
 
 
 
