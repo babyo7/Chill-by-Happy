@@ -189,24 +189,9 @@ happy.onclick = ()=> window.open("https://happy-music.vercel.app");
 }
 
 
-navigator.mediaSession.metadata = new MediaMetadata({
-    title: 'Never Gonna Give You Up',
-    artist: 'Rick Astley',
-    album: 'Whenever You Need Somebody',
-    artwork: [{ src:"Cover/0.jpg"}]
-  },
-  
-  {
-    title: 'Never Gonna Give You Up',
-    artist: 'Rick Astley',
-    album: 'Whenever You Need Somebody',
-    artwork: [{ src:"Cover/6.jpg"}]
-  },
-  
-  
-  
-  
-  );
+navigator.mediaSession.setActionHandler('seekto' (){
+  x.currentTime;
+});
 
 
 
