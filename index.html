@@ -118,9 +118,7 @@
 window.onload = () => kill();
 
 
-navigator.mediaSession.setActionHandler('seekto', function(details) {
-  x.currentTime = details.seekTime;
-});
+
 
 
 
@@ -162,7 +160,9 @@ document.getElementById("circle").onclick = () => window.location.href="https://
 
 
         
-              
+         navigator.mediaSession.setActionHandler('seekto', function(details) {
+  x.currentTime = details.seekTime;
+});     
        
        
        
