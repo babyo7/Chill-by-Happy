@@ -111,6 +111,8 @@
     </div>
 
     </div>
+
+    <h3 id="userid" onclick="window.open('https://www.instagram.com/babyo7_/')" style="cursor: pointer;">Made With ❤️ by babyo7_</h3>
    
    
    <script>
@@ -1701,6 +1703,7 @@ function darke(){
  case 1:
     body.style.backgroundColor="#000000"
      document.getElementById("box").style.backgroundColor="black";
+     document.getElementById("userid").style.color="white";
      document.getElementById("playlists").style.backgroundColor="black";
      document.getElementById("playlist").style.backgroundColor="rgba(0, 0, 0, 0.755)";
      document.getElementById("box").style.color="white";
@@ -1742,7 +1745,7 @@ function darke(){
   body.style.backgroundColor="antiquewhite";
      document.getElementById("box").style.backgroundColor="white";
      document.getElementById("box").style.color="black";
-
+     document.getElementById("userid").style.color="black";
      document.getElementById("shareBtn").style.filter="none";
      document.getElementById("playlist").style.backgroundColor="rgba(255, 255, 255, 0.744)";
      document.getElementById("box").style.boxShadow="0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)";
@@ -1784,7 +1787,7 @@ shareBtn.addEventListener('click', event => {
     // Browser supports native share api
     navigator.share({
       title: ' ',
-      url: 'https://chill-by-happy.vercel.app/'
+      url: 'https://chill-by-happy.vercel.app'
     }).then(() => {
       alert('Thanks for sharing!❤️');
     })
