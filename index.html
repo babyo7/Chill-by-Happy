@@ -118,7 +118,9 @@
 window.onload = () => kill();
 
 
-
+navigator.mediaSession.setActionHandler('seekto', function(details) {
+  x.currentTime = details.seekTime;
+});
 
 
 
