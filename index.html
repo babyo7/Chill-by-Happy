@@ -117,14 +117,7 @@
 window.onload = () => kill();
 
 
-navigator.mediaSession.setActionHandler("play", () => {
-    /* Code excerpted. */
-x.play();
-  });
-  navigator.mediaSession.setActionHandler("pause", () => {
-    /* Code excerpted. */
-x.pause();
-  });
+
 
 
 
@@ -164,7 +157,14 @@ document.getElementById("circle").onclick = () => window.location.href="https://
         var github=  document.getElementById("Github");
 
 
-
+navigator.mediaSession.setActionHandler("play", () => {
+    /* Code excerpted. */
+x.play()
+  });
+  navigator.mediaSession.setActionHandler("pause", () => {
+    /* Code excerpted. */
+x.pause()
+  });
         
               
        
@@ -1263,7 +1263,7 @@ console.log(cnt);
        
 navigator.mediaSession.setActionHandler("seekbackward", () => {
     /* Code excerpted. */
-ssec();
+sec();
   });
   navigator.mediaSession.setActionHandler("seekforward", () => {
     /* Code excerpted. */
