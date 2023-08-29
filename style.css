@@ -77,6 +77,11 @@ body::-webkit-scrollbar{
     filter: grayscale(100%);
     filter: brightness(0%);
 }
+#loading img {
+    height: 130px;
+    width: 130px;
+
+}
 .control{
 
     margin-top: 0px;
