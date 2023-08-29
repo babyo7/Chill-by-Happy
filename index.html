@@ -1006,11 +1006,20 @@ switch(nxt)
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/12.jpg)";
-            n.innerText="Drag Me Down ";
+            n.innerText="Drag Me Down";
             a.innerText="One Direction";
             document.title="Drag Me Down - One Direction";
             hili();
             dehilight();
+                                                  navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Drag Me Down",
+  artist: "One Direction",
+
+  artwork: [{src: "Cover/12.jpg"}]
+});          
+            
+            
+            
             break;
 
             case 13:
@@ -1018,11 +1027,18 @@ switch(nxt)
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/13.jpg)";
-            n.innerText="You & I ";
+            n.innerText="You & I";
             a.innerText="One Direction";
             document.title="You & I - One Direction";
             hili();
             dehilight();
+    navigator.mediaSession.metadata = new MediaMetadata({
+  title: "You & I",
+  artist: "One Direction",
+
+  artwork: [{src: "Cover/13.jpg"}]
+});          
+                
             break;
 
             case 14:
@@ -1035,6 +1051,16 @@ switch(nxt)
             document.title="Starboy (feat. Daft Punk) - The Weeknd";
             hili();
             dehilight();
+            
+    navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Starboy (feat. Daft Punk)",
+  artist: "The Weeknd",
+
+  artwork: [{src: "Cover/14.jpg"}]
+});            
+            
+
+            
             break;
 
             case 15:
@@ -1047,6 +1073,15 @@ switch(nxt)
             document.title="Blinding Lights - The Weeknd";
             hili();
             dehilight();
+            
+          navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Blinding Lights",
+  artist: "The Weeknd",
+
+  artwork: [{src: "Cover/15.jpg"}]
+});      
+            
+            
             break;
 
             case 16:
