@@ -783,9 +783,16 @@ switch(nxt)
             n.innerText="Wildest Dreams";
             a.innerText="Taylor Swift";
             document.title="Wildest Dreams - Taylor Swift";
-        
+        navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Wildest Dreams",
+  artist: "Taylor Swift",
+
+  artwork: [{src: "Cover/1.jpg"}]
+});
+
               hili();
               dehilight();
+              
         break;
 
         case 2:
@@ -844,6 +851,14 @@ switch(nxt)
             document.title="People Watching - Conan Gray";
             hili();
             dehilight();
+            
+                    navigator.mediaSession.metadata = new MediaMetadata({
+  title: "People Watching",
+  artist: "Conan Gray",
+
+  artwork: [{src: "Cover/6.jpg"}]
+});
+
             break;
 
             case 7:
