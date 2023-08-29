@@ -291,7 +291,12 @@ navigator.mediaSession.setActionHandler('nexttrack', () => {
 });
 
        
+                   navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Blank Space",
+  artist: "Taylor Swift",
 
+  artwork: [{src: "Cover/0.jpg"}]
+});
 
 
 
@@ -355,7 +360,9 @@ console.log(nxt);
 
 
 
-
+document.getElementById("blank").style.backgroundColor= "darkgoldenrod";
+        document.getElementById("blank").style.color= " white";
+        
 
 
 
@@ -1091,11 +1098,22 @@ switch(nxt)
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/16.jpg)";
-            n.innerText="Save Your Tears (Remix) ";
+            n.innerText="Save Your Tears (Remix)";
             a.innerText="The Weeknd";
             document.title="Save Your Tears (Remix) - The Weeknd & Ariana Grande";
             hili();
             dehilight();
+            
+            
+            navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Save Your Tears (Remix)",
+  artist: "The Weeknd",
+
+  artwork: [{src: "Cover/16.jpg"}]
+});      
+            
+            
+            
             break;
 
         
@@ -1110,6 +1128,16 @@ switch(nxt)
             document.title="Light Switch - Charlie Puth";
             hili();
             dehilight(); 
+            
+             navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Light Switch",
+  artist: "Charlie Puth",
+
+  artwork: [{src: "Cover/17.jpg"}]
+});         
+            
+            
+            
             break;
 
             case 18:
@@ -1122,6 +1150,16 @@ switch(nxt)
             document.title="Everyday Normal Guy 2 - Pancadão Transa Som";
             hili();
             dehilight();
+            
+               navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Everyday Normal Guy 2",
+  artist: "Pancadão Transa Som",
+
+  artwork: [{src: "Cover/18.jpg"}]
+});         
+            
+            
+            
             break;
 
             case 19:
@@ -1129,11 +1167,22 @@ switch(nxt)
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/19.jpg)";
-            n.innerText="Strawberries & Cigarettes ";
-            a.innerText=" Troye Sivan";
+            n.innerText="Strawberries & Cigarettes";
+            a.innerText="Troye Sivan";
             document.title="Strawberries & Cigarettes - Troye Sivan";
             hili();
             dehilight();
+   
+               navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Strawberries & Cigarettes",
+  artist: "Troye Sivan",
+
+  artwork: [{src: "Cover/19.jpg"}]
+});         
+                       
+            
+            
+            
             break;
 
             case 20:
@@ -1146,6 +1195,15 @@ switch(nxt)
             document.title="Everybody Wants to Rule the World - Tears for Fears";
             hili();
             dehilight(); 
+                navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Everybody Wants to Rule",
+  artist: "Tears for Fears",
+
+  artwork: [{src: "Cover/20.jpg"}]
+});           
+            
+            
+            
             break;
 
 
@@ -1154,11 +1212,20 @@ switch(nxt)
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/21.jpg)";
-            n.innerText="good 4 u ";
+            n.innerText="good 4 u";
             a.innerText="Olivia Rodrigo";
             document.title="good 4 u - Olivia Rodrigo";
             hili();
             dehilight();
+            
+                    navigator.mediaSession.metadata = new MediaMetadata({
+  title: "good 4 u",
+  artist: "Olivia Rodrigo",
+
+  artwork: [{src: "Cover/21.jpg"}]
+});        
+            
+            
             break;
 
             case 22:
@@ -1171,6 +1238,15 @@ switch(nxt)
             document.title="Danza Kuduro (feat. Lucenzo) - Don Omar";
             hili();
             dehilight();  
+            
+       navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Danza Kuduro",
+  artist: "Don Omar",
+
+  artwork: [{src: "Cover/22.jpg"}]
+}); 
+            
+            
             break;
 
             case 23:
@@ -1183,6 +1259,16 @@ switch(nxt)
             document.title="Watermelon Sugar - Harry Styles";
             hili();
             dehilight();
+            
+        navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Watermelon Sugar",
+  artist: "Harry Styles",
+
+  artwork: [{src: "Cover/23.jpg"}]
+});           
+            
+            
+            
             break;
 
             case 24:
@@ -1195,6 +1281,15 @@ switch(nxt)
             document.title="You Need To Calm Down - Taylor Swift";
             hili();
             dehilight();
+            
+                 navigator.mediaSession.metadata = new MediaMetadata({
+  title: "You Need To Calm Down",
+  artist: "Taylor Swift",
+
+  artwork: [{src: "Cover/24.jpg"}]
+}); 
+            
+            
             break;
 
             case 25:
@@ -1202,33 +1297,61 @@ switch(nxt)
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/25.jpg)";
-            n.innerText="A Man Without Love ";
+            n.innerText="A Man Without Love";
             a.innerText="Engelbert Humperdinck";
             document.title="A Man Without Love - Engelbert Humperdinck";
             hili();
             dehilight();
+            
+  navigator.mediaSession.metadata = new MediaMetadata({
+  title: "A Man Without Love",
+  artist: "Engelbert Humperdinck",
+
+  artwork: [{src: "Cover/25.jpg"}]
+});           
+            
+            
             break;
             case 26:
             x.setAttribute('src','Music/26.mp3');
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/26.jpg)";
-            n.innerText="Wish You Were Sober ";
+            n.innerText="Wish You Were Sober";
             a.innerText="Conan Gray";
             document.title="Wish You Were Sober - Conan Gray";
             hili();
             dehilight(); 
+            
+    
+  navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Wish You Were Sober",
+  artist: "Conan Gray",
+
+  artwork: [{src: "Cover/26.jpg"}]
+});                   
+            
             break;
             case 27:
             x.setAttribute('src','Music/27.mp3');
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/27.jpg)";
-            n.innerText="Reminder ";
+            n.innerText="Reminder";
             a.innerText="The Weeknd";
             document.title="Reminder - The Weeknd";
             hili();
             dehilight();
+            
+            
+      navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Reminder",
+  artist: "The Weeknd",
+
+  artwork: [{src: "Cover/27.jpg"}]
+});        
+            
+            
             break;
 
             case 28:
@@ -1241,6 +1364,16 @@ switch(nxt)
             document.title="Charlie Be Quiet! - Charlie Puth";
             hili();
             dehilight(); 
+            
+            navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Charlie Be Quiet!",
+  artist: "Charlie Puth",
+
+  artwork: [{src: "Cover/28.jpg"}]
+});      
+            
+            
+            
             break;
 
             case 29:
@@ -1248,11 +1381,21 @@ switch(nxt)
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/29.jpg)";
-            n.innerText="Light Switch ";
+            n.innerText="Light Switch";
             a.innerText="Charlie Puth";
             document.title="Light Switch - Charlie Puth";
             hili();
             dehilight();
+            
+     navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Light Switch",
+  artist: "Charlie Puth",
+
+  artwork: [{src: "Cover/29.jpg"}]
+});      
+           
+            
+            
             break;
 
             case 30:
@@ -1260,11 +1403,22 @@ switch(nxt)
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/30.jpg)";
-            n.innerText="That's Hilarious ";
+            n.innerText="That's Hilarious";
             a.innerText="Charlie Puth";
             document.title="That's Hilarious - Charlie Puth";
             hili();
             dehilight();
+            
+           
+     navigator.mediaSession.metadata = new MediaMetadata({
+  title: "That's Hilarious",
+  artist: "Charlie Puth",
+
+  artwork: [{src: "Cover/30.jpg"}]
+});           
+            
+            
+            
             break;
 
                case 31:
@@ -1277,6 +1431,17 @@ switch(nxt)
             document.title="Call Out My Name - The Weeknd";
             hili();
             dehilight();
+    
+     navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Call Out My Name",
+  artist: "The Weeknd",
+
+  artwork: [{src: "Cover/31.jpg"}]
+});           
+               
+            
+            
+            
             break;
 
             case 32:
@@ -1284,11 +1449,21 @@ switch(nxt)
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/32.jpg)";
-            n.innerText="Die For You ";
+            n.innerText="Die For You";
             a.innerText="The Weeknd";
             document.title="Die For You - The Weeknd";
             hili();
             dehilight();
+            
+    navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Die For You",
+  artist: "The Weeknd",
+
+  artwork: [{src: "Cover/32.jpg"}]
+});
+            
+            
+            
             break;
 
                case 33:
@@ -1296,11 +1471,20 @@ switch(nxt)
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/33.jpg)";
-            n.innerText="Style ";
+            n.innerText="Style";
             a.innerText="Taylor Swift";
             document.title="Style - Taylor Swift";
             hili();
             dehilight();
+    navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Style",
+  artist: "Taylor Swift",
+
+  artwork: [{src: "Cover/33.jpg"}]
+});           
+            
+            
+            
             break;
 
             case 34:
@@ -1308,11 +1492,20 @@ switch(nxt)
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/34.jpg)";
-            n.innerText="Riptide -";
+            n.innerText="Riptide";
             a.innerText="The Chainsmokers";
             document.title="Riptide - The Chainsmokers";
             hili();
             dehilight();
+       navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Riptide",
+  artist: "The Chainsmokers",
+
+  artwork: [{src: "Cover/34.jpg"}]
+});         
+            
+            
+            
             break;
 
             case 35:
@@ -1325,6 +1518,17 @@ switch(nxt)
             document.title="Self Love - Metro Boomin & Coi Leray";
             hili();
             dehilight();
+          navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Self Love",
+  artist: "Metro Boomin & Coi Leray",
+
+  artwork: [{src: "Cover/35.jpg"}]
+});         
+            
+            
+            
+            
+            
             break;
             case 36:
             x.setAttribute('src','Music/36.mp3');
@@ -1336,6 +1540,15 @@ switch(nxt)
             document.title="Just the Two of Us - Grover Washington, Jr.";
             hili();
             dehilight();
+            navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Just the Two of Us",
+  artist: "Grover Washington, Jr.",
+
+  artwork: [{src: "Cover/36.jpg"}]
+});          
+            
+            
+            
             break;
 
 
@@ -1344,11 +1557,20 @@ switch(nxt)
     x.play();
                 y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/37.jpg)";
-            n.innerText="Closer ";
+            n.innerText="Closer";
             a.innerText="The Chainsmokers";
             document.title="Closer (feat. Halsey) - The Chainsmokers";
             hili();
             dehilight(); 
+         navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Closer",
+  artist: "The Chainsmokers",
+
+  artwork: [{src: "Cover/37.jpg"}]
+});            
+            
+            
+            
             break;
 
 
@@ -1366,6 +1588,12 @@ switch(nxt)
            hili();
            dehilight();
            document.title="Blank Space - Taylor Swift";
+                   navigator.mediaSession.metadata = new MediaMetadata({
+  title: "Blank Space",
+  artist: "Taylor Swift",
+
+  artwork: [{src: "Cover/0.jpg"}]
+});
 
       
                
