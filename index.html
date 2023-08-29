@@ -1273,6 +1273,19 @@ console.log(cnt);
 
 
 
+navigator.mediaSession.setActionHandler('seekto', () => {
+    /* Code excerpted. */
+x.onloadedmetadata = () => z.max = x.duration;
+// update audio position
+x.onchange = () => z.currentTime = x.value;
+// update range input when currentTime updates
+x.ontimeupdate = () => z.value = x.currentTime;
+
+
+  });
+
+
+
 
 z.max  = x.duration;        // Set max value when you know the duration
 x.onloadedmetadata = () => z.max = x.duration;
