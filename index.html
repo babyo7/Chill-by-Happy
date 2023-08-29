@@ -1276,10 +1276,7 @@ console.log(cnt);
 navigator.mediaSession.setActionHandler('seekto', () => {
     /* Code excerpted. */
 
-// update audio position
-x.onchange = () => z.currentTime = x.value;
-// update range input when currentTime updates
-x.ontimeupdate = () => z.value = x.currentTime;
+ x.currentTime;
 
 
   });
