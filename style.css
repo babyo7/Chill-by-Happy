@@ -303,9 +303,9 @@ filter: blur(100%);
 
 
 
-
     #playlist{
         overflow: scroll;
+        
         height: 100%;
         width: 100%;
         padding-top: 20px;
@@ -315,7 +315,7 @@ filter: blur(100%);
         -webkit-filter: blur(100%);
 -moz-filter: blur(100%);
 -ms-filter: blur(100%);
-filter: blur(100%);
+filter: blur(100%); 
     }
    
    
