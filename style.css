@@ -342,7 +342,10 @@ filter: blur(100%);
     #playlist button:hover{
         background-color: white;
     }
-
+#userid{
+  
+    font-size: 10px;
+}
  
 
     @media screen and (max-width: 1000px) {
