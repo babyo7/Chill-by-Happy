@@ -40,7 +40,7 @@ body::-webkit-scrollbar{
    margin-bottom: 30px;
    align-items: center;
    align-content: center;
-  
+  justify-content: center;
    
 
 }
@@ -343,8 +343,9 @@ filter: blur(100%);
         background-color: white;
     }
 #userid{
-  
+    margin-top: -620px;
     font-size: 10px;
+    font-weight: 100;
 }
  
 
