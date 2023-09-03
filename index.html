@@ -63,7 +63,7 @@
 
      <div class="music shine" id="mus" style="visibility: hidden;" >
         <div id="playlist" class="p"  style="visibility: hidden;">
-            <button id="blank"onclick="nxt=0,songs()" >Blank Space - Taylor Swift</button>
+            <button id="blank"onclick="nxt=0,songs()" >With You - AP Dhillon</button>
             <button id="wild" onclick="nxt=1,songs()">Wildest Dreams - Taylor Swift</button>
             <button id="look" onclick="nxt=2,songs()">Look What You Made Me Do - Taylor Swift</button>
             <button id="haze" onclick="nxt=3,songs()">Lavender Haze - Taylor Swift</button>
@@ -314,9 +314,9 @@ pp.style.display="none";
       
       
       
-                    navigator.mediaSession.metadata = new MediaMetadata({
-  title: "Blank Space",
-  artist: "Taylor Swift",
+navigator.mediaSession.metadata = new MediaMetadata({
+  title: "With You",
+  artist: "AP Dhillon",
 
   artwork: [{src: "Cover/0.jpg"}]
 });
@@ -1608,15 +1608,15 @@ switch(nxt)
            x.play();
            y.className="fa-solid fa-pause";
             m.style.backgroundImage = "url(Cover/0.jpg)";
-            n.innerText="Blank Space";
-            a.innerText="Taylor Swift";
+            n.innerText="   With You";
+            a.innerText="AP Dhillon";
            nxt=0;
            hili();
            dehilight();
            document.title="Blank Space - Taylor Swift";
                    navigator.mediaSession.metadata = new MediaMetadata({
-  title: "Blank Space",
-  artist: "Taylor Swift",
+  title: "With You",
+  artist: "AP Dhillon",
 
   artwork: [{src: "Cover/0.jpg"}]
 });
