@@ -213,6 +213,30 @@ happy.onclick = ()=> window.open("https://happy-music.vercel.app");
 
 
 
+navigator.mediaSession.setActionHandler('play', () => {
+    /* Code excerpted. */
+x.play();
+  });
+  navigator.mediaSession.setActionHandler('pause', () => {
+    /* Code excerpted. */
+x.pause();
+  });
+
+
+navigator.mediaSession.setActionHandler('previoustrack', () => {
+    // Whatever you need to do to play the previous track.
+prv();
+});
+navigator.mediaSession.setActionHandler('nexttrack', () => {
+    tests();
+    // Whatever you need to do to play the next track.
+});
+
+          
+         navigator.mediaSession.setActionHandler('seekto', function(details) {
+  x.currentTime = details.seekTime;
+}); 
+
 
 
         users=0;
