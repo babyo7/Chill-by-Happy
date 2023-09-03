@@ -177,10 +177,7 @@ document.getElementById("circle").onclick = () => window.location.href="https://
 
 
 
-        
-         navigator.mediaSession.setActionHandler('seekto', function(details) {
-  x.currentTime = details.seekTime;
-});     
+      
        
        
        
@@ -289,27 +286,11 @@ pp.style.display="none";
       
 }
 
-navigator.mediaSession.setActionHandler('play', () => {
-    /* Code excerpted. */
-x.play();
-  });
-  navigator.mediaSession.setActionHandler('pause', () => {
-    /* Code excerpted. */
-x.pause();
-  });
-
-
-navigator.mediaSession.setActionHandler('previoustrack', () => {
-    // Whatever you need to do to play the previous track.
-prv();
-});
-navigator.mediaSession.setActionHandler('nexttrack', () => {
-    tests();
-    // Whatever you need to do to play the next track.
-});
-
-       
-                   navigator.mediaSession.metadata = new MediaMetadata({
+   
+      
+      
+      
+                    navigator.mediaSession.metadata = new MediaMetadata({
   title: "Blank Space",
   artist: "Taylor Swift",
 
@@ -376,6 +357,31 @@ console.log(nxt);
 
 }
 
+
+
+navigator.mediaSession.setActionHandler('play', () => {
+    /* Code excerpted. */
+x.play();
+  });
+  navigator.mediaSession.setActionHandler('pause', () => {
+    /* Code excerpted. */
+x.pause();
+  });
+
+
+navigator.mediaSession.setActionHandler('previoustrack', () => {
+    // Whatever you need to do to play the previous track.
+prv();
+});
+navigator.mediaSession.setActionHandler('nexttrack', () => {
+    tests();
+    // Whatever you need to do to play the next track.
+});
+
+          
+         navigator.mediaSession.setActionHandler('seekto', function(details) {
+  x.currentTime = details.seekTime;
+}); 
 
 
 
