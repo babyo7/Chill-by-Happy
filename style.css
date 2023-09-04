@@ -7,7 +7,10 @@
 
 
 }
-
+html{
+ scroll-behaviour: smooth; 
+  
+  }
 body{
 
     text-align: center;
