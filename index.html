@@ -1883,26 +1883,21 @@ shareBtn.addEventListener('click', event => {
   // Check for Web Share API support
   if (navigator.share) {
     // Browser supports native share API
-    const websiteUrl = 'https://chill-by-happy.vercel.app'; // Replace with the URL of your website
-    const coverUrl = 'https://chill-by-happy.vercel.app/cover/0.jpg'; // Replace with the URL of your cover image
-
-    // Combine both URLs into a single text
-    const shareText = `Check out my website: ${websiteUrl}\nAnd here's the cover image: ${coverUrl}`;
-
-    // Share the combined text
+    const imageUrl = 'https://chill-by-happy.vercel.app/cover/0.jpg'; // Full URL to your image
     navigator.share({
-      text: shareText,
+      title: 'Check out This!',
+      url: imageUrl,
     })
       .then(() => {
-        alert('Content shared successfully! ❤️');
+        alert('Thanks For Sharing! ❤️');
       })
       .catch((err) => {
         console.error(err);
-        alert('Error sharing content.');
+        alert('Error sharing image.');
       });
   } else {
     // Fallback
-    alert("The current browser does not support the share function. Please, manually share the links.");
+    alert("The current browser does not support the share function. Please, manually share the link.");
   }
 });
 
