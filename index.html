@@ -1880,24 +1880,20 @@ detectColorScheme();
 const shareBtn = document.getElementById('shareBtn')
 
 shareBtn.addEventListener('click', event => {
-  // Check for Web Share API support
+
+  // Check for Web Share api support
   if (navigator.share) {
-    // Browser supports native share API
-    const imageUrl = 'https://chill-by-happy.vercel.app/cover/0.jpg'; // Full URL to your image
+    // Browser supports native share api
     navigator.share({
-      title: 'Check out This!',
-      url: imageUrl,
+      title: 'Check Out This',
+      url: 'https://chill-by-happy.vercel.app'
+    }).then(() => {
+      alert('Thanks for sharing!❤️');
     })
-      .then(() => {
-        alert('Thanks For Sharing! ❤️');
-      })
-      .catch((err) => {
-        console.error(err);
-        alert('Error sharing image.');
-      });
+      .catch((err) => console.error(err));
   } else {
     // Fallback
-    alert("The current browser does not support the share function. Please, manually share the link.");
+    alert("The current browser does not support the share function. Please, manually share the link")
   }
 });
 
