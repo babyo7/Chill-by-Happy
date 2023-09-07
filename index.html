@@ -1880,28 +1880,30 @@ detectColorScheme();
 const shareBtn = document.getElementById('shareBtn')
 
 shareBtn.addEventListener('click', event => {
+  // Check for Web Share API support
+  if (navigator.share) {
+    // Browser supports native share API
+    const websiteUrl = 'https://chill-by-happy.vercel.app'; // Replace with the URL of your website
+    const coverUrl = 'https://chill-by-happy.vercel.app/cover/0.jpg'; // Replace with the URL of your cover image
 
-// Check for Web Share API support
-if (navigator.share) {
-  // Browser supports native share API
-  fetch('Cover\\0.jpg')
-    .then(response => response.blob()) // Convert the fetched response to a Blob
-    .then(blob => {
-      navigator.share({
-        title: 'Check out Chill by Happy!',
-        text: 'The best place to relax.',
-        url: 'https://chill-by-happy.vercel.app',
-        files: [new File([blob], 'Cover_0.jpg', { type: 'image/jpeg' })] // Adjust the type and file name as needed
-      }).then(() => {
-        alert('Thanks for sharing!❤️');
-      })
-      .catch((err) => console.error(err));
+    // Combine both URLs into a single text
+    const shareText = `Check out my website: ${websiteUrl}\nAnd here's the cover image: ${coverUrl}`;
+
+    // Share the combined text
+    navigator.share({
+      text: shareText,
     })
-    .catch((err) => console.error(err));
-} else {
-  // Fallback
-  alert("The current browser does not support the share function. Please, manually share the link")
-}
+      .then(() => {
+        alert('Content shared successfully! ❤️');
+      })
+      .catch((err) => {
+        console.error(err);
+        alert('Error sharing content.');
+      });
+  } else {
+    // Fallback
+    alert("The current browser does not support the share function. Please, manually share the links.");
+  }
 });
 
 
