@@ -297,7 +297,7 @@ filter: blur(100%);
 
 
     #playlists button{
-        border-radius: 10px;
+        border-radius: 50px;
         backdrop-filter: blur(30px);
         color: black;
         width: 300px;
@@ -332,7 +332,7 @@ filter: blur(100%);
      overflow: hidden;
        white-space: nowrap;
         text-overflow: ellipsis;
-        border-radius: 10px;
+        border-radius: 50px;
         backdrop-filter: blur(30px);
         color: black;
         width: 300px;
