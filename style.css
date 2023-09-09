@@ -445,7 +445,7 @@ filter: blur(100%);
     }
    
     #playlist button{
-        border-radius: 10px;
+        border-radius: 50px;
         backdrop-filter: blur(30px);
         color: black;
         width: 260px;
