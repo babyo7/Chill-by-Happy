@@ -37,12 +37,16 @@ button:active{
     width: 400px;
 
     margin: auto;
-   
+   margin-top: 23px;
+   padding-top: 1px;
    text-align: center;
    border-radius: 30px;
    box-shadow: 10cap;
    flex-wrap: wrap;
-  
+   margin-bottom: 30px;
+   align-items: center;
+   align-content: center;
+  justify-content: center;
   position: absolute;
   top: 50%;
   left: 50%;
