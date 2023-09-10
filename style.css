@@ -9,13 +9,16 @@
 }
 html{
  scroll-behavior: smooth; 
-  
+
+ 
   }
 body{
 
     text-align: center;
     background-color: antiquewhite;
     text-transform: capitalize;
+    height: 100%;
+    width: 100%;
 }
 
 body::-webkit-scrollbar{
@@ -34,7 +37,7 @@ button:active{
     box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     height: 650px;
     width: 400px;
-    background-color: white;
+
     margin: auto;
    margin-top: 23px;
    padding-top: 1px;
@@ -46,8 +49,6 @@ button:active{
    align-items: center;
    align-content: center;
   justify-content: center;
-   
-
 }
 
 #playlists{
