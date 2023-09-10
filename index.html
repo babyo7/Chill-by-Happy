@@ -1715,20 +1715,16 @@ console.log(dark)
 function darke(){
     switch(dark){
  case 1:
-    body.style.backgroundColor="#141414"
+        body.style.backgroundColor="#141414"
      document.getElementById("box").style.backgroundColor="#141414";
-     
-    
-     
-     
      document.getElementById("userid").style.color="white";
      document.getElementById("playlists").style.backgroundColor="#141414";
-    
+   
      document.getElementById("box").style.color="white";
 
      document.getElementById("shareBtn").style.filter="invert(100%)";
  
-     
+     document.getElementById("box").style.boxShadow="0 0px 7px 0 #272829, 0 0px 7px 0 #272829";
    
      document.getElementById("circle").style.border="solid 1px white";
 
@@ -1748,6 +1744,11 @@ function darke(){
 
 
 
+     document.getElementById("loading").style.filter="grayscale(0%)";
+     
+     document.getElementById("loading").style.filter="brightness(0%)";
+     document.getElementById("loading").style.webkitFilter="grayscale(0%)";
+
      document.getElementById("babez").style.color="white";
      document.getElementById("Happy").style.color="white";
      document.getElementById("mgmt").style.color="white";
@@ -1755,7 +1756,7 @@ function darke(){
      document.getElementById("Github").style.color="white";
      document.getElementById("close").style.color="white";
 
-     
+
        break;
 
   default:
