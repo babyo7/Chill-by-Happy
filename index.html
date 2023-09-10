@@ -1890,37 +1890,26 @@ let touchendX = 0
 function checkDirection() {
   if (touchendX < touchstartX) {
   
-    prv();
+    tests();
     playaudio();
 
   }
   if (touchendX > touchstartX) {
   
-    
-    tests();
+    prv();
     playaudio();
 
   }
 }
 
-box.addEventListener('touchstart', e => {
+hide.addEventListener('touchstart', e => {
   touchstartX = e.changedTouches[0].screenX
 })
 
-box.addEventListener('touchend', e => {
+hide.addEventListener('touchend', e => {
   touchendX = e.changedTouches[0].screenX
   checkDirection()
 })
-
-p.addEventListener('touchstart', e => {
-  
-})
-
-p.addEventListener('touchend', e => {
-  
-  
-})
-
 
 const shareBtn = document.getElementById('shareBtn')
 
