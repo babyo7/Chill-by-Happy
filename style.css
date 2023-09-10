@@ -17,9 +17,7 @@ body{
     text-align: center;
     background-color: antiquewhite;
     text-transform: capitalize;
-    height: 100%;
-    width: 100%;
-}
+ }
 
 body::-webkit-scrollbar{
     display: none;
