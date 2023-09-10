@@ -1903,14 +1903,24 @@ function checkDirection() {
   }
 }
 
-document.addEventListener('touchstart', e => {
+box.addEventListener('touchstart', e => {
   touchstartX = e.changedTouches[0].screenX
 })
 
-document.addEventListener('touchend', e => {
+box.addEventListener('touchend', e => {
   touchendX = e.changedTouches[0].screenX
   checkDirection()
 })
+
+p.addEventListener('touchstart', e => {
+  
+})
+
+p.addEventListener('touchend', e => {
+  
+  
+})
+
 
 const shareBtn = document.getElementById('shareBtn')
 
