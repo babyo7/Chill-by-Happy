@@ -1715,9 +1715,10 @@ console.log(dark)
 function darke(){
     switch(dark){
  case 1:
-        body.style.backgroundColor="#141414"
+        body.style.backgroundColor="black"
      document.getElementById("box").style.backgroundColor="#141414";
      document.getElementById("userid").style.color="white";
+    
      document.getElementById("playlists").style.backgroundColor="#141414";
    
      document.getElementById("box").style.color="white";
@@ -1799,7 +1800,7 @@ function darke(){
 const detectColorScheme = () => {
   if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
     console.log('User prefers dark mode');
-    body.style.backgroundColor="#141414"
+    body.style.backgroundColor="black"
      document.getElementById("box").style.backgroundColor="#141414";
      document.getElementById("userid").style.color="white";
      document.getElementById("playlists").style.backgroundColor="#141414";
