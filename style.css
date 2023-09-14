@@ -13,7 +13,8 @@ html{
  
   }
 body{
-
+display:flex;
+  justify-content:center;
     text-align: center;
     background-color: antiquewhite;
     text-transform: capitalize;
